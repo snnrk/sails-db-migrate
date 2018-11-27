@@ -1,0 +1,65 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "globals": {
+    "_": true,
+    "sails": true,
+    "async": true,
+    "server": true,
+    // Models
+    "Images": true,
+    "ResultDetails": true,
+    "Results": true,
+    "Sites": true,
+    "Users": true,
+    // for jQuery
+    "document": true,
+    "window": true
+  },
+  "extends":[
+    "eslint:recommended"
+  ],
+  "rules":{
+    "comma-dangle": 1,
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      1,
+      {
+        "varsIgnorePattern": "^_\\w",
+        "argsIgnorePattern": "^_\\w"
+      }
+    ],
+    "no-console": 0
+  }
+}
